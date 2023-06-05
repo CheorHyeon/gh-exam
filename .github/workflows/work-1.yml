@@ -11,3 +11,10 @@ jobs:
         run: echo "Hi"
       - name: sayMyName
         run: echo "${{ github.actor }}"
+  hello2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: sayHi
+        run: echo "Hi2"
+      - name: sayMyName
+        run: echo "${{ github.actor }} + 2"      
